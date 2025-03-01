@@ -1,8 +1,7 @@
 # 📌 PBO - Pemrograman Berbasis Objek  
 
 ## 👩‍💻 About Me  
-Halo! Saya **Johana Oktavia Ramadhani**,  
-Mahasiswi **Universitas Dian Nuswantoro**.  
+Halo! Saya **Johana Oktavia Ramadhani**, Mahasiswi **Universitas Dian Nuswantoro**.  
 
 Repository ini dibuat untuk dokumentasi **tugas, latihan, dan proyek** dalam mata kuliah **Pemrograman Berbasis Objek (PBO) - 2025**.  
 Saya akan membagikan berbagai konsep **Object-Oriented Programming (OOP) dalam Java** yang saya pelajari. 🚀  
