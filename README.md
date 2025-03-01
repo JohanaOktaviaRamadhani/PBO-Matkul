@@ -3,8 +3,9 @@
 ## 👩‍💻 About Me  
 Halo! Saya **Johana Oktavia Ramadhani**, Mahasiswi **Universitas Dian Nuswantoro**.  
 
-## Di repository ini, saya bakal nge-share berbagai tugas, latihan, dan eksplorasi seru seputar mata kuliah **Pemrograman Berbasis Objek (PBO)** - 2025. 
-Selama belajar, saya juga akan mendokumentasikan konsep-konsep Object-Oriented Programming (OOP) dalam Java yang saya pelajari. 🚀
+Di repository ini, saya bakal nge-share berbagai tugas, latihan, dan eksplorasi seru seputar mata kuliah **Pemrograman Berbasis Objek (PBO) - 2025**.  
+Selama belajar, saya juga akan mendokumentasikan konsep-konsep **Object-Oriented Programming (OOP) dalam Java** yang saya pelajari. 🚀  
+
 ---
 
 ## 📂 Struktur Repository  
@@ -26,4 +27,4 @@ Selama belajar, saya juga akan mendokumentasikan konsep-konsep Object-Oriented P
 
 ## 🔗 Let's Connect!  
 📧 **LinkedIn:** [Johana Oktavia Ramadhani](https://www.linkedin.com/in/johanaoktavia)  
-📍 **Universitas Dian Nuswantoro**
+📍 **Universitas Dian Nuswantoro** 
