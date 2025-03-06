@@ -16,7 +16,7 @@ public class Character{
         this.exp = exp;
     }
 
-    //MEMANGGIL RETURN 1 PERSATU
+    //memanggil satu/satu, kalau mau return jangan pernah menggunakan void
     public String getNama(){
         return this.nama; //return hanya bisa 1 properti, kalau mau >1 pakai array 
     }
@@ -30,7 +30,7 @@ public class Character{
         return this.exp;
     }
 
-
+    //methods untuk menambah/mengurangi value properties ketika di play
     public void attack(){
         System.out.println(this.nama + " menyerang musuh");
         ExpUp();

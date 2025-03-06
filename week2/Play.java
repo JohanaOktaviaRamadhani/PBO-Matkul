@@ -19,11 +19,9 @@ public class Play
         player1.attack();
         player1.attack();
         player1.attack();
-        player1.attack();
-        player1.attack();
         player1.levelUp();
 
-        System.out.println("\n === Informasi Player after attack 5x & levelup 1x ===");
+        System.out.println("\n === Informasi Player after attack 3x & levelup 1x ===");
         System.out.println("Nama: "+player1.getNama());
         System.out.println("Hp: "+player1.getHp());
         System.out.println("Level: "+player1.getLevel());
