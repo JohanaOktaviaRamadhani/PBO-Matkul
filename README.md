@@ -9,7 +9,7 @@ Di repository ini, saya bakal nge-share berbagai tugas, latihan, dan eksplorasi 
 
 ## 📂 Struktur Repository  
 📁 **week1/** → Dasar Penulisan Java, membuat Identitas, serta perhitungan sederhana di Java  
-📁 **week2/** → *Coming soon...*  
+📁 **week2/** → Membuat Properti (Karakter) & Method (Perilaku)  
 📁 **week3/** → *Coming soon...*  
 📁 **week4/** → *Coming soon...*  
 
@@ -19,7 +19,7 @@ Di repository ini, saya bakal nge-share berbagai tugas, latihan, dan eksplorasi 
 
 ## 💡 Teknologi yang Digunakan  
 - ☕ **Java (JDK 23)**  
-- 💻 **Visual Studio Code** sebagai IDE  
+- 💻 **Visual Studio Code** sebagai text editor  
 - 🗄 **Git & GitHub** untuk version control  
 
 ---
