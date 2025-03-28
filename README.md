@@ -11,7 +11,9 @@ Di repository ini, saya bakal nge-share berbagai tugas, latihan, dan eksplorasi 
 📁 **week1/** → Dasar Penulisan Java, membuat Identitas, serta perhitungan sederhana di Java  
 📁 **week2/** → Membuat Properti (Karakter) & Method (Perilaku)  
 📁 **week3/** → Belajar membuat tebakan angka sederhana dengan do while
-📁 **week4/** → *Coming soon...*  
+📁 **week4/** → Belajar mengenal array dalam PBO & membuat kuis sederhana
+📁 **week5/** → *Coming soon...*  
+
 
 💡 **Repo ini akan terus saya perbarui seiring dengan progres pembelajaran!**  
 
