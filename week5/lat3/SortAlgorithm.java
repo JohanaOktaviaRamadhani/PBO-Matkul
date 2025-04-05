@@ -1,50 +1,45 @@
 package lat3;
 import java.util.Arrays;
 
-public class Latihan3 {
+public class SortAlgorithm {
     public static void bubbleSort(int[] arr) {
-        int n = arr.length;
         int count = 1;
-        for (int i = 0; i < n-1; i++) {
-            for (int j = 0; j < n-i-1; j++) {
-                if (arr[j] > arr[j+1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    swap(arr, j, j + 1);
                     System.out.println("Iterasi " + count++ + ": " + Arrays.toString(arr));
                 }
             }
         }
     }
 
-    public static void quickSort(int[] arr, int low, int high, int[] counter) {
+    public static void quickSort(int[] arr, int low, int high, int[] count) {
         if (low < high) {
-            int pi = partition(arr, low, high, counter);
-            quickSort(arr, low, pi - 1, counter);
-            quickSort(arr, pi + 1, high, counter);
+            int pi = partition(arr, low, high, count);
+            quickSort(arr, low, pi - 1, count);
+            quickSort(arr, pi + 1, high, count);
         }
     }
 
-    private static int partition(int[] arr, int low, int high, int[] counter) {
+    private static int partition(int[] arr, int low, int high, int[] count) {
         int pivot = arr[high];
-        int i = (low - 1);
-
+        int i = low - 1;
         for (int j = low; j < high; j++) {
             if (arr[j] < pivot) {
                 i++;
                 swap(arr, i, j);
-                System.out.println("Iterasi " + counter[0]++ + ": " + Arrays.toString(arr));
+                System.out.println("Iterasi " + count[0]++ + ": " + Arrays.toString(arr));
             }
         }
         swap(arr, i + 1, high);
-        System.out.println("Iterasi " + counter[0]++ + ": " + Arrays.toString(arr));
+        System.out.println("Iterasi " + count[0]++ + ": " + Arrays.toString(arr));
         return i + 1;
     }
 
     public static void insertionSort(int[] arr) {
         int count = 1;
-        int n = arr.length;
-        for (int i = 1; i < n; ++i) {
+        for (int i = 1; i < arr.length; ++i) {
             int key = arr[i];
             int j = i - 1;
 
@@ -60,32 +55,31 @@ public class Latihan3 {
 
     public static void selectionSort(int[] arr) {
         int count = 1;
-        int n = arr.length;
-
-        for (int i = 0; i < n - 1; i++) {
-            int min_idx = i;
-            for (int j = i + 1; j < n; j++) {
-                if (arr[j] < arr[min_idx]) {
-                    min_idx = j;
+        for (int i = 0; i < arr.length - 1; i++) {
+            int minIdx = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[minIdx]) {
+                    minIdx = j;
                 }
             }
-            if (i != min_idx) {
-                swap(arr, i, min_idx);
+            if (i != minIdx) {
+                swap(arr, i, minIdx);
                 System.out.println("Iterasi " + count++ + ": " + Arrays.toString(arr));
             }
         }
     }
 
-    public static void mergeSort(int[] arr, int[] counter) {
+    public static void mergeSort(int[] arr, int[] count) {
         if (arr.length > 1) {
             int mid = arr.length / 2;
             int[] left = Arrays.copyOfRange(arr, 0, mid);
             int[] right = Arrays.copyOfRange(arr, mid, arr.length);
 
-            mergeSort(left, counter);
-            mergeSort(right, counter);
+            mergeSort(left, count);
+            mergeSort(right, count);
 
             int i = 0, j = 0, k = 0;
+
             while (i < left.length && j < right.length) {
                 if (left[i] < right[j]) {
                     arr[k++] = left[i++];
@@ -102,7 +96,7 @@ public class Latihan3 {
                 arr[k++] = right[j++];
             }
 
-            System.out.println("Iterasi " + counter[0]++ + ": " + Arrays.toString(arr));
+            System.out.println("Iterasi " + count[0]++ + ": " + Arrays.toString(arr));
         }
     }
 

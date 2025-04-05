@@ -1,5 +1,4 @@
 package lat4;
-
 public class Matrix {
     private int[][] data;
 
@@ -21,7 +20,6 @@ public class Matrix {
                 result[i][j] = this.data[i][j] + other.data[i][j];
             }
         }
-
         return new Matrix(result);
     }
 
