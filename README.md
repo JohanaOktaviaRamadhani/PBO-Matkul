@@ -1,11 +1,5 @@
 # 📌 PBO - Pemrograman Berbasis Objek  
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
----
-
 ## 👩‍💻 Tentang Repository  
 Halo! Saya **Johana Oktavia Ramadhani**, seorang mahasiswi dari **Universitas Dian Nuswantoro**.
 
