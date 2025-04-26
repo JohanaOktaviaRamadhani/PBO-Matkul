@@ -7,6 +7,13 @@ public class Character{
     int level = 1 ;
     int exp = 0;
 
+    public Character(String nama, int hp, int level, int exp) {
+        this.nama = nama;
+        this.hp = hp;
+        this.level = level;
+        this.exp = exp;
+    }
+
     //methods
     //void = tidak ada return value, bentuknya prosedur 
     public void setData (String nama, int hp, int level, int exp){
@@ -44,4 +51,8 @@ public class Character{
     public void attacked(){
         this.hp--;
     }
+    public void minumRamuan() {
+        this.hp++;
+    }
+
 }
