@@ -1,5 +1,5 @@
-package enemy;
-import character.Hero;
+package week8.enemy;
+import week8.character.Hero;
 
 public class MainEnemy extends Hero {
 

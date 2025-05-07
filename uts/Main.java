@@ -1,7 +1,7 @@
 package uts;
 
-import character.Hero;
-import enemy.MainEnemy;
+import week8.character.Hero;
+import week8.enemy.MainEnemy;
 import java.util.Scanner;
 
 public class Main {
@@ -32,12 +32,12 @@ public class Main {
             if (pilihan == 1) {
                 hero.attack();
                 enemy.defend();
-                System.out.println("dari " + enemy.getNama() + " menerima 25 hp!");
+                System.out.println("dari" + enemy.getNama() + " menerima 25 hp!");
 
             } else if (pilihan == 2) {
                 hero.attack(40); //ini kan overloading yang tadi sy buat di hero, pembedanya adalah pendapatan hp menjadi 20, kalau skill 1 mah 10 hp aja
                 enemy.defend(40);
-                System.out.println("dari " + enemy.getNama() + " menerima 40 hp!");
+                System.out.println("dari" + enemy.getNama() + " menerima 40 hp!");
             }
              else if (pilihan == 3) {
                 hero.defend();

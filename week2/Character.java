@@ -25,7 +25,7 @@ public class Character{
 
     //memanggil satu/satu, kalau mau return jangan pernah menggunakan void
     public String getNama(){
-        return this.nama; //return hanya bisa 1 properti, kalau mau >1 pakai array 
+        return this.nama; 
     }
     public int getHp (){
         return this.hp;
