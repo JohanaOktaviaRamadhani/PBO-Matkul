@@ -14,8 +14,8 @@ public class CheckingAccount {
 	}
 	
 	public void tarikUang(double jumlahtarik) throws InsufficientFundsException {
-		if (!(jumlahtarik % 20000 == 0 || jumlahtarik % 50000 == 0 || jumlahtarik % 100000 == 0)) {
-			throw new IllegalArgumentException("Penarikan hanya boleh kelipatan Rp20.000, Rp50.000, atau Rp100.000.");
+		if (!isValidAmount(jumlahtarik)) {
+			throw new IllegalArgumentException("Nominal tidak dapat ditarik. Gunakan kombinasi Rp20.000, Rp50.000, dan Rp100.000.");
 		}
 
 		if (jumlahtarik <= saldo) {
@@ -26,7 +26,24 @@ public class CheckingAccount {
 		}
 	}
 
-	
+	// Method tambahan untuk validasi kombinasi pecahan
+	private boolean isValidAmount(double amount) {
+		if (amount < 20000 || amount % 1000 != 0) return false; // basic check
+
+		int target = (int) amount;
+		int[] pecahan = {100000, 50000, 20000};
+
+		for (int i = 0; i <= target / pecahan[0]; i++) {
+			for (int j = 0; j <= target / pecahan[1]; j++) {
+				for (int k = 0; k <= target / pecahan[2]; k++) {
+					int total = (pecahan[0] * i) + (pecahan[1] * j) + (pecahan[2] * k);
+					if (total == target) return true;
+				}
+			}
+		}
+		return false;
+	}
+
 	public double getSaldo()
 	{
 		return saldo;
