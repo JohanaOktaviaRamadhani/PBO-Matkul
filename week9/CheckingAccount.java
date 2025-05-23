@@ -31,7 +31,7 @@ public class CheckingAccount {
 		if (amount < 20000 || amount % 1000 != 0) return false; // basic check
 
 		int target = (int) amount;
-		int[] pecahan = {100000, 50000, 20000};
+		int[] pecahan = {50000, 20000};
 
 		for (int i = 0; i <= target / pecahan[0]; i++) {
 			for (int j = 0; j <= target / pecahan[1]; j++) {
