@@ -26,9 +26,9 @@ public class CheckingAccount {
 		}
 	}
 
-	// Method tambahan untuk validasi kombinasi pecahan
+	// ✅ Method validasi kombinasi pecahan
 	private boolean isValidAmount(double amount) {
-		if (amount < 20000 || amount % 1000 != 0) return false; // basic check
+		if (amount < 20000 || amount % 10000 != 0) return false;
 
 		int target = (int) amount;
 		int[] pecahan = {50000, 20000};
@@ -37,12 +37,16 @@ public class CheckingAccount {
 			for (int j = 0; j <= target / pecahan[1]; j++) {
 				for (int k = 0; k <= target / pecahan[2]; k++) {
 					int total = (pecahan[0] * i) + (pecahan[1] * j) + (pecahan[2] * k);
-					if (total == target) return true;
+					if (total == target) {
+						return true;
+					}
 				}
 			}
 		}
+
 		return false;
 	}
+
 
 	public double getSaldo()
 	{
