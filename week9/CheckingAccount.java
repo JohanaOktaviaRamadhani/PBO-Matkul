@@ -13,18 +13,19 @@ public class CheckingAccount {
 		saldo += jumlahsetor;
 	}
 	
-	public void tarikUang(double jumlahtarik) throws InsufficientFundsException
-	{
-		if(jumlahtarik <= saldo) 
-		{
-			saldo -= jumlahtarik;
+	public void tarikUang(double jumlahtarik) throws InsufficientFundsException {
+		if (!(jumlahtarik % 20000 == 0 || jumlahtarik % 50000 == 0 || jumlahtarik % 100000 == 0)) {
+			throw new IllegalArgumentException("Penarikan hanya boleh kelipatan Rp20.000, Rp50.000, atau Rp100.000.");
 		}
-		else
-		{
+
+		if (jumlahtarik <= saldo) {
+			saldo -= jumlahtarik;
+		} else {
 			double kebutuhan = jumlahtarik - saldo;
 			throw new InsufficientFundsException(kebutuhan);
 		}
 	}
+
 	
 	public double getSaldo()
 	{

@@ -32,6 +32,8 @@ public class Bank {
                     System.out.println("Berhasil menarik Rp " + tarik);
                 } catch (InsufficientFundsException e) {
                     System.out.println("Gagal menarik. Saldo Anda kurang Rp " + e.getAmount());
+                } catch (IllegalArgumentException e) {
+                    System.out.println("Gagal menarik. " + e.getMessage());
                 }
             } else if (pilihan == 4) {
                 System.out.println("Terima kasih telah menggunakan layanan bank kami.");
