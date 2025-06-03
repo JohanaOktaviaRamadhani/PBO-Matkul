@@ -32,7 +32,16 @@ Saya juga akan mendokumentasikan berbagai konsep **Object-Oriented Programming (
 → Mengembangkan mini game **Palindrome Checker** untuk mengecek apakah suatu kata atau kalimat merupakan palindrom, dengan menerapkan konsep OOP  
 
 📁 **week7/**  
-→ *Coming soon...*  
+→ *Simulasi pewarisan dengan membuat class 'Enemy' yang mewarisi atribut dan method dari superclass 'Hero'.*  
+
+📁 **week8/**  
+→ *Menerapkan method overloading untuk menghitung luas berbagai bangun datar (persegi, persegi panjang, segitiga, lingkaran) dalam satu class.*  
+
+📁 **week9/**  
+→ *Simulasi sederhana sistem rekening bank yang dapat melakukan penambahan dan penarikan saldo dengan nominal pecahan tertentu.*  
+
+📁 **week10/**  
+→ *Belajar membuat abstract dalam OOP*  
 
 ---
 
