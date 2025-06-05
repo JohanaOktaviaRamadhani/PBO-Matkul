@@ -1,4 +1,4 @@
-package week10;
+package abstrakkendaraan;
 
 public abstract class Kendaraan {
 	private String merk;
